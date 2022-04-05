@@ -1,0 +1,31 @@
+id;Nombre;Pais;edad;Ocupacion;Score;Salario net USD;Estado Civil;Estado;Fecha Inactividad;Genero;Device;Nivel Educativo;Carrera
+1;c1;Colombia;23;Empleado;342;3450;Soltero;1;;F;Huawei;Pregrado;Ingeniero
+2;c2;Argentina;34;Independiente;654;4599;Soltero;1;;F;Iphone;Posgrado;Administrador
+3;c3;Mexico;40;Empleado;300;7999;Soltero;1;;F;Iphone;Posgrado;Ingeniero
+4;c4;Brasil;35;Empleado;600;6430;Soltero;1;;f;Samsung;Master;Administrador
+5;c5;Chile;43;Empleado;430;5000;Soltero;1;;f;Samsung;Pregrado;Ingeniero
+6;c6;Colombia;23;Empleado;520;4000;Soltero;1;;f;Samsung;Posgrado;Medico
+7;c7;Colombia;45;Empleado;450;6900;Soltero;1;;fF;Iphone;Master;Ingeniero
+8;c8;Colombia;34;in dependiente;650;2400;Soltero;1;;F;Samsung;Pregrado;Administrador
+9;c9;Argentina;24;;390;4520;Soltero;1;;M;Iphone;Master;Ingeniero
+10;c10;Mexico;22;Empleado;365;8909;Casado;1;;M;Iphone;Pregrado;Ingeniero
+11;c11;Mexico;31;Empleado;320;3450;Cas ;1;;mm;Samsung;Posgrado;Medico
+12;c12;Argentina;33;Empleado;450;7400;Sol ;1;;F;Iphone;Master;Ingeniero
+13;c13;Brasil;32;Empleado;621;3209; Soltero;1;;F;Samsung;Pregrado;Contador
+14;c14;Mexico;38;Empleado;600;2340;Casado;1;;F;Iphone;Posgrado;Ingeniero
+15;c15;Mexico;35;Empleado;510;2300;Casado;1;;m;Iphone;Master;Administrador
+16;c16;Argentina;41;Independiente;301;3254;Casado;1;;F;Huawei;Posgrado;Contador
+17;c17;Brasil;30;;300;2324;Casado;1;;F;Huawei;Master;Medico
+18;c18;Mexico;35;Empleado;450;8000;Casado;1;;m;Huawei;Pregrado;Administrador
+19;c19;Mexico;32;Empleado;490;3548;Casado;1;;m;Samsung;Master;Administrador
+20;c20;Colombia;38;Soltero;690;11000;Soltero;1;;M;Huawei;Posgrado;Ingeniero
+21;c21;Brasil;65;Empleado;520;10500;Casado;0;03/05/2020;F;Huawei;Pregrado;Administrador
+22;c22;Argentina;23;;670;4379;Casado;0;02/11/2020;F;Samsung;Posgrado;Ingeniero
+23;c23;Mexico;22;emp;602;12034;Casado;0;25/02/2020;f;Huawei;Posgrado;Ingeniero
+24;c24;Brasil;66;Empleado;401;11001;Soltero;0;12/06/2020;f;Iphone;Pregrado;Ingeniero
+25;c25;Colombia;35;Independiente;420;8343;Soltero;0;31/07/2020;f;Samsung;Master;Ingeniero
+26;c26;Mexico;32;;304;9110ç;Soltero;0;febrero 29 2020;m;Iphone;Pregrado;Administrador
+27;c27;Argentina;28;Independiente;560;12000;Casado;0;15/09/2020;m;Iphone;Master;Administrador
+28;c28;Mexico;25;;;13459;Cosado;0;16/09/2020;m;Huawei;Pregrado;Administrador
+29;c29;Mexico;30;Independiente;-345;10030;Soltero;0;mayo 21 2020;m;Iphone;Master;Ingeniero
+30;c30;Argentina;35;;2300;13000;Casado;0;01/08/2020;f;Huawei;Pregrado;Ingeniero
