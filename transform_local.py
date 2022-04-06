@@ -51,9 +51,26 @@ result_frame = sqldf(query)
 result_frame['fechacompra'] = pd.to_datetime(result_frame['fechacompra'])
 result_frame['fecha_inactividad'] = pd.to_datetime(result_frame['fecha_inactividad'])
 result_frame['fecha_analisis'] = pd.to_datetime(result_frame['fecha_analisis'])
+result_frame['nombre_fill'] = result_frame['cust_id'].apply(lambda x: f'c{x}')
+
+for column in result_frame.columns:
+    
+    if result_frame[f'{column}'].dtype == '<M8[ns]':
+        result_frame[f'{column}'].fillna(result_frame[f'{column}'].max(), inplace = True) 
+    elif (result_frame[f'{column}'].dtype == 'float64') or (result_frame[f'{column}'].dtype == 'int64'):
+        result_frame[f'{column}'].fillna(result_frame[f'{column}'].median(), inplace = True) 
+    else:
+        result_frame[f'{column}'].fillna(result_frame[f'{column}'].mode()[0], inplace = True) 
 
 result_frame['dias_vs_ultima_compra'] = result_frame['fecha_analisis'] - result_frame['fechacompra']  
 result_frame['dias_vs_ultima_compra'] = result_frame['dias_vs_ultima_compra'].dt.days
-
 result_frame['life_time_value'] = result_frame['dias_vs_ultima_compra'] - result_frame['dias_inactivo']
 result_frame['life_time_value'] = np.where(result_frame['dias_inactivo'] == 0, 0, result_frame['life_time_value'])
+
+
+result_frame['estado'] = result_frame['estado'].replace({1: 'activo', 0: 'inactivo'}) 
+
+result_frame.to_gbq(destination_table = f'{settings.DATASET}.pt_master_table_etl',
+                       project_id = settings.PROJECT_ID,
+                       credentials = settings.credentials, 
+                       if_exists = settings.IF_EXIST )
