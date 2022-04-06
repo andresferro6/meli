@@ -68,10 +68,3 @@ if __name__ == '__main__':
     frame_clientes = clean_clientes(frames = dict_frames, config = settings)
     frame_compras = clean_compras(frames = dict_frames)
     frame_productos = clean_productos(frames = dict_frames)
-
-
-
-
-
-
-
