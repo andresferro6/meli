@@ -67,7 +67,6 @@ result_frame['dias_vs_ultima_compra'] = result_frame['dias_vs_ultima_compra'].dt
 result_frame['life_time_value'] = result_frame['dias_vs_ultima_compra'] - result_frame['dias_inactivo']
 result_frame['life_time_value'] = np.where(result_frame['dias_inactivo'] == 0, 0, result_frame['life_time_value'])
 
-
 result_frame['estado'] = result_frame['estado'].replace({1: 'activo', 0: 'inactivo'}) 
 
 result_frame.to_gbq(destination_table = f'{settings.DATASET}.pt_master_table_etl',
