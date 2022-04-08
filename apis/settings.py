@@ -15,21 +15,3 @@ KEYS = os.getenv('KEYS', r"C:\Users\ASUS\Documents\Programacion\pruebasTecnicas\
 
 credentials = service_account.Credentials.from_service_account_file(f'{KEYS}')
 client = bigquery.Client(credentials = credentials)
-
-YEAR_ANALISIS = 2022
-MONTH_ANALISIS = 4
-DAY_ANALISIS = 4
-
-MAPPER_PROFESIONES_CLIENTE = {'in dependiente': 'Independiente', 
-                              'emp': 'Empleado',
-                              'Soltero': 'NoProporcionado'}
-
-MAPPER_ES_CIVIL_CLIENTE = {'Cas': 'Casado', 
-                           'Sol': 'Soltero',
-                           'Cosado': 'Casado'}
-
-NOMBRE_TABLA_CLIENTE = f'{DATASET}.pt_clientes_celular'
-NOMBRE_TABLA_PRODUCTOS = f'{DATASET}.pt_productos_celular'
-NOMBRE_TABLA_COMPRAS = f'{DATASET}.pt_compras_celular'
-
-IF_EXIST = 'replace'

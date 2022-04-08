@@ -1,23 +1,21 @@
-import flask
 import json
-from google.cloud import bigquery
-
-bigquery_client = bigquery.Client()
+import flask
+from settings import client
 
 app = flask.Flask(__name__)
 
+# https://us-central1-bold-momentum-346405.cloudfunctions.net/api-meli-prueba-tecnica
+
 @app.route("/")
 def hello_world():
-    query_job = bigquery_client.query(
-        """
-        SELECT id,
-               nombre,
-               pais,
-               edad,
-               ocupacion
-        FROM `bold-momentum-346405.pruebaTecnica.pt_clientes_celular`
-        """
-    ).to_dataframe()
+    if not flask.request.args.get('table'):
+        return {'status': 400,
+                'mensaje':'There"s no table to query',
+        }
+    query = f"""
+                SELECT *
+                FROM `bold-momentum-346405.pruebaTecnica.{flask.request.args.get('table')}` t1
+                """ 
+    query_job = client.query(query).to_dataframe()
     data_json = query_job.to_json(orient='records')
-    print(query_job)
-    return json.loads(data_json)
+    return data_json
