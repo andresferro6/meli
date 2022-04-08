@@ -25,12 +25,18 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingZero">
                   <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
-                    Descripción general
+                    Descripción general prueba
                   </button>
                 </h2>
                 <div id="collapseZero" class="accordion-collapse collapse show" aria-labelledby="headingZero" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <p> <span class="fw-bold"> - Pilar Tecnico:  Deben</span>  En esta parte de la prueba deben usar alguna herramienta (preferiblemente Cloud) donde creen su espacio de trabajo para cargar la información que se suministro, deben tener en cuenta que el espacio de trabajo y la forma de realizarlo es muy importante al momento de crear un ecosistema de información, por tal razón utilicen la herramienta que se sientan más cómodos al momento de desarrollar y hacer todo el proceso de ETL, parte de la presentación que deben hacer es contarme cómo hicieron este proceso.
+                      <br>
+                      <br><span class="fw-bold"> - Pilar Analitico:  Deben</span> 
+                         obtener insigths importantes para la empresa que les suministró la base de datos, por tal razón es importante que analicen bien que información tienen, que preguntas de negocio deben responder, qué conclusiones obtiene de la información y qué propuesta le harían a la organización.
+                      <br>
+                      <br><span class="fw-bold">  - Pilar innovador:  </span> 
+                      Este pilar es de ustedes, sean libres de buscar el más allá de la información que les proveen, dar algo inesperado que ayude con todo el proceso desde la extracción de la información hasta la propuesta que darán a la empresa, no se limiten!!!!!!</p>
                   </div>
                 </div>
               </div>
@@ -38,12 +44,36 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                  Aprovisionamiento y configuración de BigQuery
+                  Pilar Técnico
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <h5 class="text-center fw-bold"> Este pilar fue desarrollado en Google (GCP)</h5>
+                  <br>
+                  <p>
+                    <span class="fst-italic">"Tener en cuenta que el espacio de trabajo y la forma de realizarlo es muy importante al momento de crear un ecosistema de información"</span>
+                    <br>
+                    <br>
+                    Tal como lo pedia la prueba explicitamente en la descripción, se creo un espacio de trabajo <span class="fw-bold">escalable, seguro y resiliente.</span> De la siguiente manera: 
+                    <br>
+                    <br>
+                    <span class="fw-bold">Seguro:</span>
+                     Google bajo su servicio de IAM, permite gestionar cuentas de usuario con permisos especificos. Para esta prueba, el usuario dado, solo tenia permisos de -1.1 Administrador de BigQuery y 1.2 Usuario de trabajo de BigQuery - el cual accedia mediante key en formato JSON, encriptadas, cumpliendo con el principio de minimo privilegio.
+                    <br>
+                    <br>
+                    <span class="fw-bold">Escalable:</span>
+                     Google bajo su servicio de BigQuery, es un almacén de datos sin servidor totalmente administrado que permite un análisis escalable en petabytes de datos.
+                    <br>
+                    <br>
+                    <span class="fw-bold">Resiliente:</span>
+                     Google bajo su servicio de Cloud Functions, permite ejecutar código en la nube sin necesidad de gestionar servidores
+                    <br>
+                    <br>
+                    <span class="fw-bold">
+                      Se creo una solución segura, escalable, resiliente y que permite tener un alto grado de desacoplamiento de cada componente. Con esto, logramos llevar los datos a cada lugar, sin la necesidad de administrar servidores, asumir costos de manutención, facil adaptación y escalabilidad. Cumpliendo con los requisitos de la prueba.
+                    </span>
+                  </p>
                 </div>
               </div>
             </div>
@@ -56,7 +86,9 @@
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <div class="embed-responsive embed-responsive-1by1">
+                    <iframe width="100%" height="100%" src="https://datastudio.google.com/embed/reporting/4caa9b78-2f50-420e-a54b-8dd1963978d5/page/3XtpC" frameborder="0" style="border:0" allowfullscreen></iframe>                
+                </div>
                 </div>
               </div>
             </div>
@@ -71,7 +103,7 @@
                 <div class="accordion-body">
                     <div class="embed-responsive embed-responsive-1by1">
                         <iframe width="100%" height="100%" src="https://datastudio.google.com/embed/reporting/4caa9b78-2f50-420e-a54b-8dd1963978d5/page/3XtpC" frameborder="0" style="border:0" allowfullscreen></iframe>                
-                        </div>
+                    </div>
                 </div>
               </div>
             </div>
