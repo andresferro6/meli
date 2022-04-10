@@ -42,5 +42,3 @@ profile = ProfileReport(frame,
                         title = "Prueba Técnica Meli"
                         )
 profile.to_file("report.html")
-
-
