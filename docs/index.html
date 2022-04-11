@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Tecnica Meli</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <!--Jumbotron-->
+    <div class="px-4 py-5  text-center">
+        <img class="d-block mx-auto" src="https://res.cloudinary.com/postman/image/upload/t_team_logo/v1629888551/team/b475001cc341f6c48da4f55c958f876c8a0d2918414c3773500792d438a7ad6a" alt="" width="" height="150">
+        <h1 class="display-5 fw-bold">Mercado Pago</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead fw-bold">Prueba técnica Analista de Datos Senior </p>
+        </div>
+    </div>
+    <!--End Jumbotron-->
+
+    <!--Acordeon-->
+    <div class="container mb-5">
+        <div class="accordion" id="accordionExample">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingZero">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseZero" aria-expanded="False" aria-controls="collapseZero">
+                    Descripción general
+                  </button>
+                </h2>
+                <div id="collapseZero" class="accordion-collapse collapse" aria-labelledby="headingZero" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p> <span class="fw-bold"> - Pilar Tecnico:  Deben</span>  En esta parte de la prueba deben usar alguna herramienta (preferiblemente Cloud) donde creen su espacio de trabajo para cargar la información que se suministro, deben tener en cuenta que el espacio de trabajo y la forma de realizarlo es muy importante al momento de crear un ecosistema de información, por tal razón utilicen la herramienta que se sientan más cómodos al momento de desarrollar y hacer todo el proceso de ETL, parte de la presentación que deben hacer es contarme cómo hicieron este proceso.
+                      <br>
+                      <br><span class="fw-bold"> - Pilar Analitico:  Deben</span> 
+                         obtener insigths importantes para la empresa que les suministró la base de datos, por tal razón es importante que analicen bien que información tienen, que preguntas de negocio deben responder, qué conclusiones obtiene de la información y qué propuesta le harían a la organización.
+                      <br>
+                      <br><span class="fw-bold">  - Pilar innovador:  </span> 
+                      Este pilar es de ustedes, sean libres de buscar el más allá de la información que les proveen, dar algo inesperado que ayude con todo el proceso desde la extracción de la información hasta la propuesta que darán a la empresa, no se limiten!!!!!!</p>
+                  </div>
+                </div>
+              </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Pilar Técnico
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <h5 class="text-center fw-bold"> Este pilar fue desarrollado en Google (GCP)</h5>
+                  <br>
+                  <p class="text-start">
+                    <span class="fst-italic">"Tener en cuenta que el espacio de trabajo y la forma de realizarlo es muy importante al momento de crear un ecosistema de información"</span>
+                    <br>
+                    <br>
+                    Tal como lo pedía la prueba explícitamente en la descripción, se creó un espacio de trabajo <span class="fw-bold">seguro, escalable, resiliente y serverless.</span> De la siguiente manera: 
+                    <br>
+                    <br>
+                    <span class="fw-bold">Seguro:</span>
+                     Google bajo su servicio de IAM, permite gestionar cuentas de usuario con permisos específicos. Para esta prueba, el usuario dado, solo tenía permisos de -- 1.1 Administrador de BigQuery y 1.2 Usuario de trabajo de BigQuery -- el cual accedía mediante un key en formato JSON, encriptado, cumpliendo con el principio de mínimo privilegio.
+                    <br>
+                    <br>
+                    <span class="fw-bold">Escalable:</span>
+                     Google bajo su servicio de BigQuery, es un almacén de datos sin servidor totalmente administrado que permite un análisis escalable en petabytes de datos.
+                    <br>
+                    <br>
+                    <span class="fw-bold">Resiliente:</span>
+                     Google bajo su servicio de Cloud Functions, permite ejecutar código en la nube sin necesidad de gestionar servidores
+                    <br>
+                    <br>
+                    <span class="fw-bold">
+                      Se creó una solución segura, escalable, serverless y que permite tener un alto grado de desacoplamiento de cada componente. Para esta prueba, no fue necesaria la configuración y/o administración de ningun tipo de servidor.
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Procesamiento
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                  <div class="row">
+                    <div class="col">
+                      
+                      <p> En este apartado, puedes ver las tablas, con y sin sus transformaciones. Los datos que ves aquí, son los que alimentan la información de los tableros. </p>
+                    </div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-lg-10">
+                      <select id="selectorTablas" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                        <option selected disabled>Selecciona una tabla</option>
+                        <option value="pt_clientes_celular">pt_clientes_celular</option>
+                        <option value="pt_compras_celular">pt_compras_celular</option>
+                        <option value="pt_productos_celular">pt_productos_celular</option>
+                        <option value="pt_master_table_etl">pt_master_table_etl</option>
+                        <option value="pt_master_table_etl_no_modif">pt_master_table_etl_no_modif</option>
+                      </select>
+
+                    </div>
+                    <div class="col-lg-2">
+                      <button id="buttonBuscar" class="btn btn-primary">Procesar</button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="table-responsive">
+                        <div id="showTable"></div>
+                     </div>
+                     
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Tablero Resultados
+              </button>
+            </h2>
+            <div id="collapseThree" class="mt-1 accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="embed-responsive embed-responsive-1by1">
+                      <a href="https://datastudio.google.com/embed/reporting/4caa9b78-2f50-420e-a54b-8dd1963978d5/page/3XtpC" target="_blank">Abrir en otra pantalla</a>
+                      <iframe width="100%" height="90%" src="https://datastudio.google.com/embed/reporting/4caa9b78-2f50-420e-a54b-8dd1963978d5/page/3XtpC" frameborder="0" style="border:0" allowfullscreen></iframe>                
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                Tablero Exploratorio
+              </button>
+            </h2>
+            <div id="collapseFour" class="mt-1 accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="embed-responsive embed-responsive-1by1">
+                    <a href="https://storage.googleapis.com/meli-prueba-tecnica-publico/report.html" target="_blank">Abrir en otra pantalla</a>  
+                    <iframe width="100%" height="90%" src="https://storage.googleapis.com/meli-prueba-tecnica-publico/report.html" frameborder="0" style="border:0" allowfullscreen></iframe>                
+                  </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+      <!--End Acordeon-->
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Script procesamiento -->
+    <script>
+      const button = document.querySelector("#buttonBuscar");
+      
+      button.addEventListener("click", async () => {
+
+        let modalShow = Swal.fire({
+          title: 'Cargando...',
+          text: 'Tomare un momento, iré a consultar los datos',
+          imageUrl: 'https://cdn.dribbble.com/users/1186261/screenshots/3718681/media/27438516469ad4d494718cb2b9895ca5.gif',
+          imageWidth: 150,
+          imageHeight: 150,
+          imageAlt: 'Custom image',
+        });
+
+        let selector = document.querySelector("#selectorTablas").value;
+        let API = `https://us-central1-bold-momentum-346405.cloudfunctions.net/prueba-meli?table=${selector}`
+        let fetch_data = await fetch(API);
+        let response = await fetch_data.json()
+  
+        var col = [];
+        for (var i = 0; i < response.length; i++) {
+            for (var key in response[i]) {
+                if (col.indexOf(key) === -1) {
+                    col.push(key);
+                }
+            }
+        }
+
+        // CREATE DYNAMIC TABLE.
+        var table = document.createElement("table");
+        table.classList.add('table', 'table-sm','table-responsive', 'table-hover', 'mt-3');
+
+        var tr = table.insertRow(-1);                   
+
+        for (var i = 0; i < col.length; i++) {
+            var th = document.createElement("th");      
+            th.innerHTML = col[i];
+            tr.appendChild(th);
+        }
+
+        for (var i = 0; i < response.length; i++) {
+
+        tr = table.insertRow(-1);
+
+        for (var j = 0; j < col.length; j++) {
+            var tabCell = tr.insertCell(-1);
+            tabCell.innerHTML = response[i][col[j]];
+        }
+        }
+
+        // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
+        var divContainer = document.getElementById("showTable");
+        divContainer.innerHTML = "";
+        divContainer.appendChild(table);
+
+        modalShow.closeModal()
+      });
+
+    </script>
+</body>
+</html>
