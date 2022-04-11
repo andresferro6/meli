@@ -34,9 +34,6 @@ query = f"""
     FROM `{settings.PROJECT_ID}.{settings.DATASET}.pt_master_table_etl`
 """
 frame = settings.client.query(query).to_dataframe()
-frame['mmmm'] = frame['GASTO'].astype(float)
-frame['mmmm_DOS'] = [float(x) for x in frame['GASTO']]
-frame['mmmm_TRES'] = [int(x) for x in frame['GASTO']]
 
 profile = ProfileReport(frame, 
                         title = "Prueba Técnica Meli"

@@ -24,11 +24,11 @@
 
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingZero">
-                  <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
-                    Descripción general prueba
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseZero" aria-expanded="False" aria-controls="collapseZero">
+                    Descripción general
                   </button>
                 </h2>
-                <div id="collapseZero" class="accordion-collapse collapse show" aria-labelledby="headingZero" data-bs-parent="#accordionExample">
+                <div id="collapseZero" class="accordion-collapse collapse" aria-labelledby="headingZero" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     <p> <span class="fw-bold"> - Pilar Tecnico:  Deben</span>  En esta parte de la prueba deben usar alguna herramienta (preferiblemente Cloud) donde creen su espacio de trabajo para cargar la información que se suministro, deben tener en cuenta que el espacio de trabajo y la forma de realizarlo es muy importante al momento de crear un ecosistema de información, por tal razón utilicen la herramienta que se sientan más cómodos al momento de desarrollar y hacer todo el proceso de ETL, parte de la presentación que deben hacer es contarme cómo hicieron este proceso.
                       <br>
@@ -51,15 +51,15 @@
                 <div class="accordion-body">
                   <h5 class="text-center fw-bold"> Este pilar fue desarrollado en Google (GCP)</h5>
                   <br>
-                  <p>
+                  <p class="text-start">
                     <span class="fst-italic">"Tener en cuenta que el espacio de trabajo y la forma de realizarlo es muy importante al momento de crear un ecosistema de información"</span>
                     <br>
                     <br>
-                    Tal como lo pedia la prueba explicitamente en la descripción, se creo un espacio de trabajo <span class="fw-bold">escalable, seguro y resiliente.</span> De la siguiente manera: 
+                    Tal como lo pedía la prueba explícitamente en la descripción, se creó un espacio de trabajo <span class="fw-bold">seguro, escalable, resiliente y serverless.</span> De la siguiente manera: 
                     <br>
                     <br>
                     <span class="fw-bold">Seguro:</span>
-                     Google bajo su servicio de IAM, permite gestionar cuentas de usuario con permisos especificos. Para esta prueba, el usuario dado, solo tenia permisos de -1.1 Administrador de BigQuery y 1.2 Usuario de trabajo de BigQuery - el cual accedia mediante key en formato JSON, encriptadas, cumpliendo con el principio de minimo privilegio.
+                     Google bajo su servicio de IAM, permite gestionar cuentas de usuario con permisos específicos. Para esta prueba, el usuario dado, solo tenía permisos de -- 1.1 Administrador de BigQuery y 1.2 Usuario de trabajo de BigQuery -- el cual accedía mediante un key en formato JSON, encriptado, cumpliendo con el principio de mínimo privilegio.
                     <br>
                     <br>
                     <span class="fw-bold">Escalable:</span>
@@ -71,7 +71,7 @@
                     <br>
                     <br>
                     <span class="fw-bold">
-                      Se creo una solución segura, escalable, resiliente y que permite tener un alto grado de desacoplamiento de cada componente. Con esto, logramos llevar los datos a cada lugar, sin la necesidad de administrar servidores, asumir costos de manutención, facil adaptación y escalabilidad. Cumpliendo con los requisitos de la prueba.
+                      Se creó una solución segura, escalable, serverless y que permite tener un alto grado de desacoplamiento de cada componente. Para esta prueba, no fue necesaria la configuración y/o administración de ningun tipo de servidor.
                     </span>
                   </p>
                 </div>
@@ -86,7 +86,14 @@
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
+
                   <div class="row">
+                    <div class="col">
+                      
+                      <p> En este apartado, puedes ver las tablas, con y sin sus transformaciones. Los datos que ves aquí, son los que alimentan la información de los tableros. </p>
+                    </div>
+                  </div>
+                  <div class="row mt-3">
                     <div class="col-lg-10">
                       <select id="selectorTablas" class="form-select form-select-sm" aria-label=".form-select-sm example">
                         <option selected disabled>Selecciona una tabla</option>
