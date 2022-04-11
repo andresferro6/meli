@@ -15,3 +15,10 @@ Para ver la documentación de Google sobre IAM: [https://cloud.google.com/iam?hl
 # Datos:
 
 - 1: Se resuelve la prueba teniendo en cuenta dos enfoques, ETL (Extract, Transform, Load) y ELT (Extract, Load, Tranform)
+- 2: Enfoque de la prueba Serveless
+- 3: El backend de la prueba fue desarrollado en BigQuery, Cloud Funcitons, Cloud Storage. El lenguje empleado fue Python.
+- 4: Cada ambiente esta aislado con su propio requierents.txt
+- 5: Para ver a creación del reporte: ver carpeta report
+- 6: Para ver la creaciónd el front: ver carpeta docs
+- 7: Para ver la creación de la api: ver carpeta apis
+- 8: Para ver la tranfcormación de los archivos, revisar los archivos .py.
